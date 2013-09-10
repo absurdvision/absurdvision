@@ -1,0 +1,32 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+/* set default namespace to XUL */
+
+/* Adjust row height in Message pane */
+#threadTree treechildren:-moz-tree-row {
+height: 50px !important;
+} 
+
+toolbar {
+	background-color: #EDEDED !important;
+} 
+
+treechildren::-moz-tree-cell(lc-FFCCCC) { background-color: #FFCCCC !important; }
+treechildren::-moz-tree-cell(lc-FFCCCC, selected) { background-color: #DD0000 !important; }
+treechildren::-moz-tree-cell-text(lc-FFCCCC) { color: #000 !important; }
+treechildren::-moz-tree-cell-text(lc-FFCCCC, selected) { color: #FFF !important; }
+
+
+#mailContext-openConversation, 
+#mailContext-replyAll,
+#mailContext-replyList,
+#mailContext-archive,
+#mailContext-moveToFolderAgain,
+#mailContext-saveAs,
+#mailContext-printpreview,
+#threadPaneContext-openNewTab,
+#mailContext-print{ display:none !important;}
+
+
+#QuickFolders-Toolbar.toolbar-flat toolbarbutton[label^="Gmail"] {margin-right:30px !important; }
+
+
